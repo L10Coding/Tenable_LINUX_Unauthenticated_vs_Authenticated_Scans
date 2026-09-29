@@ -1,4 +1,4 @@
-# Tenable_LINUX_Unauthenticated_vs_Authenticated_Scans
+# Unauthenticated vs Authenticated Scans on Linux Ubuntu '24 Virtual Machine
 Project showcasing unauthenticated and authenticated scans on a Linux (Ubuntu 24) VM, utilizing the Tenable platform
 
 
@@ -21,66 +21,72 @@ This project documents the vulnerability scanning of an **Ubuntu Linux Virtual M
 ---
 
 ## 📝 Phase 1: VM Creation and Environment Setup
-✅ **Created a Ubuntu VM in Azure:**  
+✅ **Creating a Ubuntu VM in Azure:**  
 
-(ss for deployment)
+<img width="1000" height="800" alt="Deploying VM" src="Linux VM/Linux VM Deployed.png"/> 
 
-✅ **Connected to the Linux VM via Bastion as user `drewbrees`:**  
+✅ **Connecting to the Linux VM via Bastion as user `drewbrees`:**  
 
-(ss for connecting to linux VM)
+<img width="1000" height="800" alt="Deploying VM" src="Linux VM/Connecting to Linux VM via Bastion.png"/> 
+
+<img width="1000" height="800" alt="Connecting to VM" src="Linux VM/Connected to Linux VM.png"/> 
 
 ---
 
 ## 📝 Phase 2: Unauthenticated Scan
 ✅ **Created a Basic Network Scan in Tenable:**  
 
-(grab ss of Tenable scan page)
-
+<img width="1000" height="800" alt="Setting up unauthenticated scan" src="VM Labs - Images/Creating Scan in Tenable.png"/> 
 
 ✅ **Configuring the Unauthenticated Scan and setting the private IP address as the only target:**  
-(ss for creating Linux scan)
+
+<img width="1000" height="800" alt="Configuring unauthenticated scan" src="Linux VM/Creating Linux Scan.png"/> 
 
 
 ✅ **Editing Discovery tab settings for custom, and ensuring ping and fast network discovery are enabled:**  
-(ss for Creating Linux Discovery Settings) 
+
+<img width="1000" height="800" alt="Configuring Discovery settings for scan" src="Linux VM/Creating Linux Discovery Settings.png"/> 
+
 
 ✅ **Scan running:**  
-(ss for Linux scan running)
+
+<img width="1000" height="800" alt="Linux unauthenticated scan running" src="Linux VM/Linux scan running.png"/> 
 
 ✅ **Unauthenticated Scan Completion and Results:**  
-![8- Unauthenticated Scan Completed](https://github.com/user-attachments/assets/36411adc-01a3-4d49-8029-6d941d867458)
-![9- Results in from Unauthenticated Scan](https://github.com/user-attachments/assets/68d8b327-5699-4baa-ad13-4ee33a5b8c0d)
+
+<img width="1000" height="800" alt="Linux unauthenticated scan results" src="Linux VM/Linux scan results.png"/> 
 
 ✅ **Exported Results for better analysis:**
-![9- Exported Unauthenticated Scan Results](https://github.com/user-attachments/assets/7649c484-bc53-43e4-8718-acdc851e86b4)
 
-
-
+<img width="1000" height="800" alt="Linux unauthenticated scan executive summary results" src="Linux VM/Linux Exec Summary Results.png"/> 
 
 ---
 
 ## 📝 Phase 3: Enabling Root SSH for Authenticated Scanning
-✅ **Reset root password and enable remote login:**  
-![10- Reset the root passwd to default](https://github.com/user-attachments/assets/5254d5b5-b0c2-4d84-b036-a35548f218b5)
-![11- Command allow the root to be used to login remotely](https://github.com/user-attachments/assets/959849dd-8ece-4df3-9812-dffcf0dbf7e5)
+✅ **Resetting root password to default, and executing command to enable remote login with SSH using the roots credentials. This should create a vulnerability, as having the username and password the same is NEVER a good idea:**  
 
-✅ **Verified SSH login as root:**  
-![12- Logged back to the VM as root](https://github.com/user-attachments/assets/eae81b5e-304d-4864-a1cd-5387601e6555)
-![13- Logged in successfully](https://github.com/user-attachments/assets/07676c5c-7b51-44c6-8524-99d582af6e5f)
+<img width="1000" height="800" alt="Linux password reset" src="Linux VM/Linux password rest.png"/> 
+
+<img width="1000" height="800" alt="Linux password reset" src="Linux VM/Linux password reset2.png"/> 
 
 ---
 
 ## 📝 Phase 4: Authenticated Scan
-✅ **Edited the scan for an Authenticated Scan and went to Credentials to include SSH root credentials:**  
-![14- Edited the last scan for a Authenticated Scan Setting up the ssh credentials](https://github.com/user-attachments/assets/4cf9da49-b4d1-40cd-a0a5-efa812f531bc)
+✅ **Editing the scan settings to create an Authenticated Scan by including SSH root credentials:**  
 
-✅ **Ran the authenticated scan:**  
-![15- Authenticated Scan completed](https://github.com/user-attachments/assets/d9377a93-0584-4826-ae0c-9928f676a745)
-![Screenshot 2025-06-04 113058](https://github.com/user-attachments/assets/788fd1ca-e7e1-4ab3-ba04-17a86955a52c)
+<img width="1000" height="800" alt="Linux credentials added to scan" src="Linux VM/Linux credentials added.png"/> 
 
+✅ **Running the authenticated scan:**  
 
-✅ **Exported results for better analysis:**  
-![16- Exported Results for better evaluation](https://github.com/user-attachments/assets/9b973e5b-19d8-4872-9346-b2433c03d0a2)
+<img width="1000" height="800" alt="Authenticated scan running" src="Linux VM/Linux credentialed scan running.png"/> 
+
+✅ **Authenticated Scan Completion and Results:**  
+
+<img width="1000" height="800" alt="Linux authenticated scan results" src="Linux VM/Linux credentialed scan results.png"/> 
+
+✅ **Exported Executive Summary results for better analysis:**  
+
+<img width="1000" height="800" alt="Linux authenticated executive summary scan results" src="Linux VM/Linux credentialed scan exec summary results.png"/> 
 
 ---
 
