@@ -63,7 +63,7 @@ This project documents the vulnerability scanning of an **Ubuntu Linux Virtual M
 ---
 
 ## 📝 Phase 3: Enabling Root SSH for Authenticated Scanning
-✅ **Resetting root password to default, and executing command to enable remote login with SSH using the roots credentials. This should create a vulnerability, as having the username and password the same is NEVER a good idea:**  
+✅ **Resetting root password and executing command to enable remote login with SSH using the roots credentials:**  
 
 <img width="1000" height="800" alt="Linux password reset" src="Linux VM/Linux password rest.png"/> 
 
@@ -94,23 +94,14 @@ This project documents the vulnerability scanning of an **Ubuntu Linux Virtual M
 
 | Metric                       | Unauthenticated Scan | Authenticated Scan |
 |------------------------------|----------------------|--------------------|
-| Critical Vulnerabilities     | 1                    | 1                  |
-| High Vulnerabilities         | 2                    | 2                  |
-| Medium Vulnerabilities       | 3                    | 3                  |
-| Low Vulnerabilities          | 2                    | 2                  |
-| Informational                | 57                   | 20                 |
-| **Total Vulnerabilities**    | 65                   | 28                 |
+| Critical Vulnerabilities     | 0                    | 0                  |
+| High Vulnerabilities         | 0                    | 4                  |
+| Medium Vulnerabilities       | 0                    | 5                  |
+| Low Vulnerabilities          | 1                    | 2                  |
+| Informational                | 12                   | 61                 |
+| **Total Vulnerabilities**    | 13                   | 72                 |
 
 Authenticated scans provide more precise and accurate vulnerability data by using privileged access to probe deeper within the system.
-
----
-
-## 💬 Group Meeting Chat (Example)
-> **Felipe (Linux Admin):** Ran the unauthenticated scan. Found basic issues like ICMP exposure and SSH settings.  
-> **Anna (Security Analyst):** Those are good, but deeper OS-level findings are only exposed with credentials.  
-> **Felipe:** Absolutely. Authenticated scans confirmed vulnerabilities in GLib, Kerberos, and more.  
-> **Anna:** Let’s focus on critical and high vulnerabilities first.  
-> **Felipe:** I’ll build a remediation plan for them.
 
 ---
 
