@@ -25,7 +25,7 @@ This project documents the vulnerability scanning of an **Ubuntu Linux Virtual M
 
 (ss for deployment)
 
-✅ **Logged into the VM using SSH as user `drewbrees`:**  
+✅ **Connected to the Linux VM via Bastion as user `drewbrees`:**  
 
 (ss for connecting to linux VM)
 
@@ -53,6 +53,9 @@ This project documents the vulnerability scanning of an **Ubuntu Linux Virtual M
 
 ✅ **Exported Results for better analysis:**
 ![9- Exported Unauthenticated Scan Results](https://github.com/user-attachments/assets/7649c484-bc53-43e4-8718-acdc851e86b4)
+
+
+
 
 ---
 
