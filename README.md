@@ -1,10 +1,5 @@
 # Unauthenticated vs Authenticated Scans on Linux Ubuntu '24 Virtual Machine
-Project showcasing unauthenticated and authenticated scans on a Linux (Ubuntu 24) VM, utilizing the Tenable platform
-
-
-
-
-This project documents the vulnerability scanning of an **Ubuntu Linux Virtual Machine (VM)** deployed in Azure, using **Tenable.io** for both unauthenticated and authenticated scans. The project highlights the significant differences in vulnerability detection when using authenticated credentials for scanning.
+Project showcasing unauthenticated and authenticated scans on a Linux (Ubuntu 24) Virtual Machine deployed in Azure, utilizing the Tenable platform to highlight the significant differences in vulnerability detection when using authenticated credentials for scanning.
 
 ---
 
@@ -34,7 +29,7 @@ This project documents the vulnerability scanning of an **Ubuntu Linux Virtual M
 ---
 
 ## 📝 Phase 2: Unauthenticated Scan
-✅ **Created a Basic Network Scan in Tenable:**  
+✅ **Creating a Basic Network Scan in Tenable:**  
 
 <img width="1000" height="800" alt="Setting up unauthenticated scan" src="VM Labs - Images/Creating Scan in Tenable.png"/> 
 
